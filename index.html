@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="zh" class="no-js">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>瀑布流网格布局</title>
+	<link href='https://fonts.googleapis.com/css?family=Caveat:400,700' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/square-loader.min.css" />
+	<link rel="stylesheet" type="text/css" href="css/default.css">
+	<link rel="stylesheet" type="text/css" href="css/component.css" />
+<style>
+	.view{
+		background-color: #EFEFEF;
+	}
+	.page__title p a:hover{
+		color:rgb(187,119,26);
+	}
+	.page__title p{
+		color: gray;	
+	}
+	.addPlay{
+		
+	}
+</style>
+</head>
+<body>
+	<div class="view">
+		<header class="header">
+		<!--
+        	作者：3133315170@qq.com
+        	时间：2018-07-04
+        	描述：這一部分放頭部導航
+        -->
+		</header>
+		<section class="page page--static">
+			<div class="page__title">
+				<h2 class="page__title-main">TOPLIFE 视频中心</h2>
+				<p class="page__title-sub">TOPLIFE <a href="#" target="_blank" >Video</a> List</p>
+			</div>
+			<ul class="grid">
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/1.jpg" alt="五位行业领袖诠释生活美学 与TOPLIFE遇见未来" title="五位行业领袖诠释生活美学 与TOPLIFE遇见未来"/>
+						<h3 class="grid__item-title">五位行业领袖诠释生活美学 与TOPLIFE遇见未来</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/2.jpg" alt="即刻观看正统英伦的时尚雅致风范" title="即刻观看正统英伦的时尚雅致风范" />
+						<h3 class="grid__item-title">Mulberry 即刻观看正统英伦的时尚雅致风范</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/3.jpg" alt="五大生活家荟聚发声 与TOPLIFE遇见未来" title="五大生活家荟聚发声 与TOPLIFE遇见未来"/>
+						<h3 class="grid__item-title">五大生活家荟聚发声 与TOPLIFE遇见未来</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/4.jpg" alt="聆听苏格兰手作品质承诺" title="聆听苏格兰手作品质承诺"/>
+						<h3 class="grid__item-title">BARRIE 聆听苏格兰手作品质承诺</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/5.jpg" alt="即刻观看由黄子韬演绎的全新视频" title="即刻观看由黄子韬演绎的全新视频"/>
+						<h3 class="grid__item-title">SAINT LAURENT即刻观看由黄子韬演绎的全新视频</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/6.jpg" alt="欢迎来到TOD'S马戏团" title="欢迎来到TOD'S马戏团"/>
+						<h3 class="grid__item-title">TOD'S Circus 欢迎来到TOD'S马戏团</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/2.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/3.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/1.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/1.jpg" alt="时装设计师劳伦斯·许 、著名设计师陈幼坚、GRAZIA董事总经理孙哲、上下首席执行官及艺术总监蒋琼耳、摄影艺术家王小慧等五位备受敬仰的生活家悦享生活美学，一起与TOPLIFE 遇见未来。" />
+						<h3 class="grid__item-title">时装设计师劳伦斯·许 、著名设计师陈幼坚、GRAZIA董事总经理孙哲、上下首席执行官及艺术总监蒋琼耳、摄影艺术家王小慧等五位备受敬仰的生活家悦享生活美学，一起与TOPLIFE 遇见未来。</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/2.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Auto-color and light</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/3.jpg" alt="Some image" />
+						<h3 class="grid__item-title">That special blur</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/4.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Drama where you need it</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/5.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/6.jpg" alt="Some image" />
+						<h3 class="grid__item-title">The common, but special</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/2.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/3.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+				<li class="grid__item">
+					<a class="grid__link" href="#">
+						<img class="grid__img" src="img/photos/1.jpg" alt="Some image" />
+						<h3 class="grid__item-title">Realistic depth</h3>
+					</a>
+				</li>
+			</ul>
+		</section>
+		<!-- Related demos -->
+		<div class="related">
+		<!--
+        	作者：3133315170@qq.com
+        	时间：2018-07-04
+        	描述：底部導航
+        -->
+		</div>
+	</div><!-- /view -->
+	
+	<script src="js/classie.js"></script>
+	<script src="js/dynamics.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/main.js"></script>
+</body>
+</html>
